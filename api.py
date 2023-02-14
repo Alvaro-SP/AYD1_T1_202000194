@@ -9,7 +9,13 @@ def sumar():
     resultado = num1 + num2
     return jsonify({'resultado': resultado})
 
+@app.route('/carne', methods=['GET'])
+def info():
+    return jsonify({'carnet:':202000194})
+
 if __name__ == '__main__':
     app.run(debug=True)
+
+
 
 
